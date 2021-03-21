@@ -1,0 +1,181 @@
+.title{
+    background-color: #0cec96;  
+    height: 50px; 
+}
+.title h3{
+    display: block;
+    margin: auto;
+    color: white;
+}
+
+
+.form-part{
+    margin:40px;
+}
+
+.name{
+    margin-right: 62px;
+}
+.email{
+    margin-right: 68px;
+}
+.website{
+    margin-right: 48px;
+}
+.image-link{
+    margin-right: 32px;
+}
+.gender{
+    margin-right: 50px;
+    margin-top: 20px;
+}
+.skill{
+    margin-right: 70px;
+    margin-top: 15px;
+}
+.text-field{
+    width: 240px;
+    height: 40px;
+    margin-top: 20px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.checkbox{
+    margin-right: 10px;
+}
+.submit{
+    margin-top: 20px;
+}
+.clear{
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}
+
+.error{
+    color: red;
+    margin-bottom: 20px;
+}
+
+#my{
+     visibility: hidden; 
+}
+
+/* CSS For Vertical Line */
+.vl {
+    border-left: 6px solid green;
+  height: 500px;
+  position: absolute;
+  left: 0%;
+  margin-left: -3px;
+  top: 15px;
+  }
+
+
+.table{
+      margin:50px 50px 0 100px;
+  }
+
+.show_details{
+    width:60%
+}
+
+/* CSS For Table Element */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+ 
+.heading-row{
+    background-color:#0cec96 ;
+    color:white;
+    height:30px;
+}
+
+.Rolleed_title
+{
+   margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#show_name{
+    font-weight:600;
+    font-size:20px;
+}
+
+ /* CSS for Fade Effect */
+.fade-in {
+    animation: fadeIn ease 20s;
+    -webkit-animation: fadeIn ease 20s;
+    -moz-animation: fadeIn ease 20s;
+    -o-animation: fadeIn ease 20s;
+    -ms-animation: fadeIn ease 20s;
+    }
+    @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
+
+
+    /* Media Query */
+@media only screen and (min-width:500px) and (max-width:624px){
+   #nameErr{
+       margin-left:120px;
+       
+   }
+}
+
+@media only screen and (min-width:799px) and (max-width:832px){
+    #nameErr,#emailErr{
+        margin-left:17px;
+        
+    }
+ }
+ @media only screen and (min-width:833px) and (max-width:840px){
+    #nameErr,#emailErr{
+        margin-left:22px;
+        
+    }
+ }
+ @media only screen and (min-width:841px) and (max-width:911px){
+    #nameErr,#emailErr{
+        margin-left: 25px;
+        
+    }
+ }
+ @media only screen and (min-width:912px) and (max-width:1264px){
+    #nameErr,#emailErr{
+        margin-left: 125px;
+        
+    }
+ }

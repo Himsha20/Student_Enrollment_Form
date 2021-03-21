@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-Enrollment-Form</title>
+    
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+         
+                   <nav class="nav navbar-expend-lg title">
+                         <h3>Student Enrollment Form</h3>
+                   </nav>
+               <div class="row">
+                   <div class=" col-lg-6 col-md-6 ">
+                          <form class="form-part" name="contactForm" id="form_parts" onsubmit="return validateform()" action="">
+                              <label class="name" for="">Name:</label>
+                              <input class="text-field" type="text" name="name" id="name_field" >
+                              <span class="error" id="nameErr"></span>
+                               <br>
+
+                              <label class="email" for="">Email:</label>
+                              <input class="text-field" type="text" name="email" id="">
+                              <span class="error" id="emailErr"></span>
+                              <br>
+
+                              <label class="website" for="">Website:</label>
+                            <input  class="text-field" type="text" name="website">
+                            <span class="error" id="websiteErr"></span>
+                            <br>
+                    
+                            <label class="image-link" for="">Image link:</label>
+                            <input class="text-field" type="image-link" name="imagelink" > 
+                            <span class="error" id="imagelinkErr"></span>
+                            <br>
+
+                            <label class="gender"  for="">Gender:</label>
+                            <input type="radio" id="male" name="gender" value="Male">
+                            <label for="male">Male</label><br>
+                            <input type="radio" id="female" name="gender" value="Female" style="margin-left: 110px;">
+                            <label for="female">Female</label><br>
+                            <span class="error" id="genderErr" style="margin-left: 110px"></span>
+                            <br>
+
+                            <label  class="skill" for=""> Skills:</label>
+                            <input type="checkbox" id="java" name="skill[]" value="Java" checked>
+                            <label  for="java"> Java</label>
+                            <input  type="checkbox" id="html" name="skill[]" value="HTML">
+                            <label  for="html">HTML</label>
+                            <input type="checkbox" id="css" name="skill[]" value="CSS" >
+                            <label for="css">CSS</label><br>
+                            <span class="error" id="skillErr"></span> 
+                           
+                           
+
+                            <button class="btn btn-primary btn-lg submit" type="submit">Enroll Student</button>
+                            <button class="btn btn-primary btn-lg btn-danger clear" type="reset">Clear </button>
+                          </form>
+                          
+                   </div>
+                   <div class="col-lg-6 col-md-6" >
+                          <div class="vl"></div>
+                        <h3 class="Rolleed_title">Enrolled Students</h3>
+
+                        <div class="show_details fade-in" id="my">
+                                
+                            <table class="table">
+                                <tr class="heading-row">
+                                    <th>Description</th>
+
+                                    <th>Image</th>
+                                    
+                                </tr>
+                                    <tr>
+                                        <td><span class="fade-in" id="show_name"></span>
+                                           <br>
+                                         </td>
+                                         <td rowspan="5">
+                                           <span id="show_imagelink" ></span> 
+                                        </td>
+                                     </tr>
+                                        </tr>
+                                         <tr>
+                                            <td>
+                                            <span class="fade-in" id="show_email"></span>
+                                                <br>
+                                             </td>
+                                         </tr>
+                                         <tr>
+                                            <td>
+                                                <span class="fade-in" id="show_gender"></span>
+                                                <br>
+                                             </td>
+                                         </tr>
+                                         <tr>
+                                            <td>
+                                                 <a href="" onclick="myFunction()" id="demo" target="_blank"><span id="show_website"></span></a>
+                                                <br>
+                                             </td>
+                                         </tr>
+                                         <tr>
+                                            <td>
+                                                <span class="fade-in" id="show_skill"></span>
+                                             </td>
+                                         </tr>
+                                        
+                                           
+                            </table>
+                                    
+                      
+                        </div>
+                   </div>
+
+               </div>
+       
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
